@@ -1,18 +1,24 @@
-
 * {
   margin: 0; padding: 0; box-sizing: border-box;
   font-family: 'Cairo', sans-serif;
 }
 body {
-  background: url('https://assets.codepen.io/6093409/animated-city.gif') no-repeat center center fixed;
-  background-size: cover;
   color: gold;
+}
+#bgVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -2;
+  object-fit: cover;
 }
 .overlay {
   background-color: rgba(0,0,0,0.75);
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  z-index: 0;
+  z-index: -1;
 }
 .container {
   position: relative;
