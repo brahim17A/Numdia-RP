@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NUmdia RP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="container">
+    <h1>مرحباً بك في NUmdia RP</h1>
+
+    <div class="login-box" id="loginBox">
+      <h2>تسجيل الدخول</h2>
+      <input type="text" id="username" placeholder="اسم المستخدم">
+      <input type="password" id="password" placeholder="كلمة المرور">
+      <button onclick="login()">دخول</button>
+    </div>
+
+    <div class="info-box" id="infoBox" style="display: none;">
+      <h2>معلومات حسابك</h2>
+      <p><strong>الاسم:</strong> <span id="displayName"></span></p>
+      <p><strong>الرتبة:</strong> لاعب</p>
+      <p><strong>آخر دخول:</strong> الآن</p>
+    </div>
+
+    <a class="discord-btn" href="https://discord.gg/6YvatkFt" target="_blank">انضم إلى الديسكورد</a>
+
+    <div class="rules-box">
+      <h2>قوانين رول بلاي</h2>
+      <ul style="text-align: right; padding-right: 20px;">
+        <li>❌ يمنع القتل العشوائي (RDM)</li>
+        <li>❌ يمنع تهديد اللاعبين خارج السيناريو</li>
+        <li>✅ يجب احترام الأدوار والرُتب</li>
+        <li>✅ اللعب الواقعي واجب على الجميع</li>
+        <li>❌ يمنع استغلال الثغرات</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

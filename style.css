@@ -1,0 +1,66 @@
+
+* {
+  margin: 0; padding: 0; box-sizing: border-box;
+  font-family: 'Cairo', sans-serif;
+}
+body {
+  background: url('https://assets.codepen.io/6093409/animated-city.gif') no-repeat center center fixed;
+  background-size: cover;
+  color: gold;
+}
+.overlay {
+  background-color: rgba(0,0,0,0.75);
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 0;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 50px 20px;
+}
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.login-box, .info-box, .rules-box {
+  background: rgba(255, 215, 0, 0.1);
+  border: 1px solid gold;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+  backdrop-filter: blur(10px);
+}
+input {
+  padding: 10px;
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+}
+button {
+  padding: 10px 20px;
+  background-color: gold;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+}
+.discord-btn {
+  display: inline-block;
+  margin: 20px auto;
+  padding: 10px 25px;
+  background: linear-gradient(90deg, #ffd700, #ffcc00);
+  color: black;
+  border-radius: 50px;
+  font-weight: bold;
+  box-shadow: 0 0 15px gold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.discord-btn:hover {
+  transform: scale(1.1);
+}
